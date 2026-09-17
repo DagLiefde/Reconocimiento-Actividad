@@ -1,0 +1,19 @@
+# Datos descomprimidos (se regeneran desde data/raw/UCI_HAR_Dataset.zip)
+data/raw/UCI_HAR_Dataset/
+data/raw/UCI HAR Dataset/
+
+# Resultados generados por los scripts (no versionados, se regeneran)
+results/*.json
+results/*.png
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+
+# Sistema
+.DS_Store
+!data/raw/.gitkeep
