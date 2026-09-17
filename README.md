@@ -2,7 +2,9 @@
 
 Proyecto de Machine Learning — Entrega 1 (propuesta y línea base).
 
-Reporte completo de la propuesta: [`docs/propuesta_entrega1.pdf`](docs/propuesta_entrega1.pdf)
+Reporte completo de la propuesta: [`docs/ENTREGA1.PDF`](docs/ENTREGA1.PDF)
+
+Análisis exploratorio que sustenta el reporte: [`notebooks/01_analisis_exploratorio.ipynb`](notebooks/01_analisis_exploratorio.ipynb) ([abrir en Colab](https://colab.research.google.com/github/DagLiefde/Reconocimiento-Actividad/blob/main/notebooks/01_analisis_exploratorio.ipynb))
 
 ## 1. Contexto de aplicación
 
@@ -62,7 +64,9 @@ Estos valores fijan el umbral de desempeño esperado: superar la línea base de 
 │   ├── README.md                   # instrucciones para descargar el dataset
 │   └── raw/                        # (vacío en git) aquí se coloca UCI_HAR_Dataset.zip
 ├── docs/
-│   └── propuesta_entrega1.pdf      # reporte académico de la Entrega 1
+│   └── ENTREGA1.PDF                # reporte académico de la Entrega 1
+├── notebooks/
+│   └── 01_analisis_exploratorio.ipynb  # EDA reproducible en Colab (respalda el reporte)
 ├── src/
 │   ├── data_loader.py              # carga de features y señales crudas
 │   └── train_baseline.py           # pipeline base: entrena + evalúa + guarda métricas

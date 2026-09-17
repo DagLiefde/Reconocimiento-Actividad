@@ -1,6 +1,8 @@
-# Datos descomprimidos (se regeneran desde data/raw/UCI_HAR_Dataset.zip)
+# Dataset crudo (se descarga y descomprime automáticamente, ver data/README.md)
 data/raw/UCI_HAR_Dataset/
 data/raw/UCI HAR Dataset/
+data/raw/*.zip
+data/raw/*.names
 
 # Resultados generados por los scripts (no versionados, se regeneran)
 results/*.json

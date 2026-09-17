@@ -59,6 +59,15 @@ def ensure_extracted() -> Path:
     # El .zip original contiene la carpeta "UCI HAR Dataset" (con espacio);
     # la normalizamos a "UCI_HAR_Dataset" para evitar problemas de rutas.
     spaced_dir = RAW_DIR / "UCI HAR Dataset"
+
+    # La distribución actual de UCI empaqueta el dataset como un .zip anidado
+    # (RAW_DIR/"UCI HAR Dataset.zip" en vez de la carpeta directamente).
+    inner_zip = RAW_DIR / "UCI HAR Dataset.zip"
+    if not spaced_dir.exists() and inner_zip.exists():
+        with zipfile.ZipFile(inner_zip) as zf:
+            members = [m for m in zf.namelist() if "__MACOSX" not in m]
+            zf.extractall(RAW_DIR, members=members)
+
     if spaced_dir.exists() and not EXTRACT_DIR.exists():
         spaced_dir.rename(EXTRACT_DIR)
 
