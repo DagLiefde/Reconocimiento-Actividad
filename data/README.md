@@ -22,11 +22,3 @@ El dataset no se versiona directamente en este repositorio (60 MB) para
 mantenerlo liviano; además, su licencia original prohíbe el uso comercial
 (ver `LICENSE-DATASET.txt`) y por buenas prácticas de MLOps los datos
 crudos no deben vivir en control de versiones de código.
-
-**Cita requerida** si usas este dataset en una publicación:
-
-> Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L.
-> Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using
-> Smartphones. 21th European Symposium on Artificial Neural Networks,
-> Computational Intelligence and Machine Learning, ESANN 2013. Bruges,
-> Belgium 24-26 April 2013.
